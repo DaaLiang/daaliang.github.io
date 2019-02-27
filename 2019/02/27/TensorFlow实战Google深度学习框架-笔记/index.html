@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Daaliang&#39;s Blog">
 <meta property="og:description" content="第二章 TensorFlow 环境搭建简单示例代码：12345678import tensorflow as tfa = tf.constant([1.0, 2.0], name=&quot;a&quot;)b = tf.constant([2.0, 3.0], name=&quot;b&quot;)result = a + bsess = tf.Session()sess.run(result)---输出---array([3.,">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-27T11:59:54.808Z">
+<meta property="og:updated_time" content="2019-02-27T12:11:59.582Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TensorFlow实战Google深度学习框架 笔记">
 <meta name="twitter:description" content="第二章 TensorFlow 环境搭建简单示例代码：12345678import tensorflow as tfa = tf.constant([1.0, 2.0], name=&quot;a&quot;)b = tf.constant([2.0, 3.0], name=&quot;b&quot;)result = a + bsess = tf.Session()sess.run(result)---输出---array([3.,">
@@ -157,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    11 minutes read (About 1592 words)
+                    11 minutes read (About 1710 words)
                 </span>
                 
                 
@@ -259,6 +259,38 @@
 </ul>
 <h3 id="3-4TensorFlow实现神经网络"><a href="#3-4TensorFlow实现神经网络" class="headerlink" title="3.4TensorFlow实现神经网络"></a>3.4TensorFlow实现神经网络</h3><p>矩阵乘法：<br><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = tf.matmul(x, w1)</span><br><span class="line">y = tf.matmul(a, w2)</span><br></pre></td></tr></table></figure></p>
 <h4 id="变量初始化"><a href="#变量初始化" class="headerlink" title="变量初始化"></a>变量初始化</h4><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#产生一个 2×3 的矩阵，矩阵中的元素是均值为 0，标准差为 2 的随机数。可以通过参数 mean 来指定平均值，默认为0。</span></span><br><span class="line">weights = tf.Variable(tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>]), stddev=<span class="hljs-number">2</span>))</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">函数名称</th>
+<th style="text-align:left">随机数分布</th>
+<th style="text-align:left">主要参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">tf.random_normal</td>
+<td style="text-align:left">正态分布</td>
+<td style="text-align:left">平均值、标准差、取值类型</td>
+</tr>
+<tr>
+<td style="text-align:left">tf.truncated_normal</td>
+<td style="text-align:left">正态分布，但如果随机出来的值偏离平均值超过2个标准差就重新随机</td>
+<td style="text-align:left">平均值、标准差、取值类型</td>
+</tr>
+<tr>
+<td style="text-align:left">tf.random_uniform</td>
+<td style="text-align:left">均匀分布</td>
+<td style="text-align:left">最小、最大取值，取值类型</td>
+</tr>
+<tr>
+<td style="text-align:left">tf.random_gamma</td>
+<td style="text-align:left">Gamma分布</td>
+<td style="text-align:left">形状参数alpha、尺度参数 beta 、 取值类型</td>
+</tr>
+</tbody>
+</table>
+
         </div>
         
         <div class="level is-size-7 is-uppercase">
