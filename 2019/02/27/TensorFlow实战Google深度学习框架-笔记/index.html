@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Daaliang&#39;s Blog">
 <meta property="og:description" content="第二章 TensorFlow 环境搭建简单示例代码：12345678import tensorflow as tfa = tf.constant([1.0, 2.0], name=&quot;a&quot;)b = tf.constant([2.0, 3.0], name=&quot;b&quot;)result = a + bsess = tf.Session()sess.run(result)---输出---array([3.,">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-28T10:26:12.220Z">
+<meta property="og:updated_time" content="2019-02-28T11:32:02.855Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TensorFlow实战Google深度学习框架 笔记">
 <meta name="twitter:description" content="第二章 TensorFlow 环境搭建简单示例代码：12345678import tensorflow as tfa = tf.constant([1.0, 2.0], name=&quot;a&quot;)b = tf.constant([2.0, 3.0], name=&quot;b&quot;)result = a + bsess = tf.Session()sess.run(result)---输出---array([3.,">
@@ -161,7 +161,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    11 minutes read (About 1710 words)
+                    16 minutes read (About 2452 words)
                 </span>
                 
                 
@@ -270,38 +270,20 @@
 </ul>
 <h3 id="3-4-TensorFlow实现神经网络"><a href="#3-4-TensorFlow实现神经网络" class="headerlink" title="3.4 TensorFlow实现神经网络"></a>3.4 TensorFlow实现神经网络</h3><p>矩阵乘法：<br><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = tf.matmul(x, w1)</span><br><span class="line">y = tf.matmul(a, w2)</span><br></pre></td></tr></table></figure></p>
 <h4 id="变量初始化"><a href="#变量初始化" class="headerlink" title="变量初始化"></a>变量初始化</h4><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#产生一个 2×3 的矩阵，矩阵中的元素是均值为 0，标准差为 2 的随机数。可以通过参数 mean 来指定平均值，默认为0。</span></span><br><span class="line">weights = tf.Variable(tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>]), stddev=<span class="hljs-number">2</span>))</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">函数名称</th>
-<th style="text-align:left">随机数分布</th>
-<th style="text-align:left">主要参数</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">tf.random_normal</td>
-<td style="text-align:left">正态分布</td>
-<td style="text-align:left">平均值、标准差、取值类型</td>
-</tr>
-<tr>
-<td style="text-align:left">tf.truncated_normal</td>
-<td style="text-align:left">正态分布，但如果随机出来的值偏离平均值超过2个标准差就重新随机</td>
-<td style="text-align:left">平均值、标准差、取值类型</td>
-</tr>
-<tr>
-<td style="text-align:left">tf.random_uniform</td>
-<td style="text-align:left">均匀分布</td>
-<td style="text-align:left">最小、最大取值，取值类型</td>
-</tr>
-<tr>
-<td style="text-align:left">tf.random_gamma</td>
-<td style="text-align:left">Gamma分布</td>
-<td style="text-align:left">形状参数alpha、尺度参数 beta 、 取值类型</td>
-</tr>
-</tbody>
-</table>
-
+<p><strong>TensorFlow 随机数生成函数表</strong><br>|函数名称 | 随机数分布 | 主要参数 |<br>|:– | :– | :– |<br>|tf.random_normal|正态分布|平均值、标准差、取值类型|<br>|tf.truncated_normal|正态分布，但如果随机出来的值偏离平均值超过2个标准差就重新随机|平均值、标准差、取值类型|<br>|tf.random_uniform|均匀分布|最小、最大取值，取值类型|<br>|tf.random_gamma|Gamma分布|形状参数alpha、尺度参数 beta 、 取值类型|<br><strong>TensorFlow常数生成函数表</strong><br>|函数名称|功能|样例|<br>|:– | :– | :– |<br>|tf.zeros|产生全 0 的数组|tf.zeros([2, 3], int32) -&gt; [[0, 0, 0], [0, 0, 0]]<br>|tf.ones|产生全 1 的数组|tf.ones([2, 3], int32) -&gt; [[1, 1, 1], [1, 1, 1]]|<br>|tf.fill|产生一个全部为给定数字的数组|tf.fill([2, 3], 9) -&gt; [[9, 9, 9], [9, 9, 9]]|<br>|tf.constant|产生一个给定值的常量|tf.constant([1, 2, 3]) -&gt; [1, 2, 3]|<br>一些以常数初始化数值的方法：<br><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">biases = tf.Variable(tf.zeros([<span class="hljs-number">3</span>]))</span><br><span class="line"><span class="hljs-comment"># 生成一个初始值全部为 0 且长度为 3 的变量</span></span><br><span class="line">w2 = tf.Variable(weights.initialized_value())</span><br><span class="line"><span class="hljs-comment"># w2 的初始值被设置成了与 weights 变量相同</span></span><br><span class="line">w3 = tf.Variable(weights.initialized_value() * <span class="hljs-number">2.0</span>)</span><br><span class="line"><span class="hljs-comment"># w3 的初始值则是 weights 初始值的两倍</span></span><br></pre></td></tr></table></figure></p>
+<p>一个前向传播过程：</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> tensorflow <span class="hljs-keyword">as</span> tf</span><br><span class="line">＃声明 w1、w2 两个变盘。这里还通过 seed 参数设定了随机种子，</span><br><span class="line">＃这样可以保证每次运行得到的结果是一样的。</span><br><span class="line">w1 = tf.Variable(tf.random_normal((<span class="hljs-number">2</span>, <span class="hljs-number">3</span>), stddev=<span class="hljs-number">1</span>, seed=<span class="hljs-number">1</span>))</span><br><span class="line">w2 = tf.Variable(tf.random_normal((<span class="hljs-number">3</span>, <span class="hljs-number">1</span>), stddev=<span class="hljs-number">1</span>, seed=<span class="hljs-number">1</span>))</span><br><span class="line">＃暂时将输入的特征向量定义为一个常量。注意这里 x 是一个 <span class="hljs-number">1</span>×<span class="hljs-number">2</span> 的矩阵。</span><br><span class="line">x = tf.constant([[<span class="hljs-number">0.7</span>, <span class="hljs-number">0.9</span>]])</span><br><span class="line">＃通过 <span class="hljs-number">3.4</span><span class="hljs-number">.2</span> 节描述的前向传播算法获得神经网络的输出。</span><br><span class="line">a = tf.matmul(x, w1)</span><br><span class="line">y = tf.matmul(a, w2)</span><br><span class="line">sess = tf.Session()</span><br><span class="line">＃与 <span class="hljs-number">3.4</span><span class="hljs-number">.2</span> 中的计算不同，这里不能直接通过 sess.run(y) 来获取 y 的取值，</span><br><span class="line">＃因为 w1 和 w2 都还没有运行初始化过程。以下两行分别初始化了 w1 和 w2 两个变量。</span><br><span class="line">sess.run(w1.initializer) ＃初始化 w1。</span><br><span class="line">sess.run(w2.initializer) ＃初始化 w2。</span><br><span class="line">＃输出[[<span class="hljs-number">3.95757794</span>]]。</span><br><span class="line">print(sess.run(y))</span><br><span class="line">sess.close()</span><br></pre></td></tr></table></figure>
+<p>当需要初始化的变量变多，可以使用以下方法初始化：<br><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">init_op = tf.global_variables_initializer()</span><br><span class="line">sess.run(init_op)</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>通过 tf.global_variables() 函数可以拿到当前计算图上所有的变量。</li>
+<li>可以通过变量声明函数中的 trainable 参数来区分需要优化的参数（比如神经网络中的参数）和其他参数（比如选代的轮数）。如果声明变量时参数 trainable 为 True，那么这个变量将会被加入到GraphKeys.TRAINABLE_VARIABLES 集合。</li>
+<li>类似张量，维度（shape)和类型 (type) 也是变量最重要的两个属性，一个变量在构建之后，它的类型就不能再改变了。</li>
+</ul>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">w1 = tf.Variable(tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>], stddev=<span class="hljs-number">1</span>), name=<span class="hljs-string">"w1"</span>)</span><br><span class="line">w2 = tf.Variable(tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>], dtype=tf.float64, stddev=<span class="hljs-number">1</span>),</span><br><span class="line">name=<span class="hljs-string">"w2"</span>)</span><br><span class="line">w1.assign(w2)</span><br><span class="line"><span class="hljs-string">'''</span></span><br><span class="line"><span class="hljs-string">程序将报错：</span></span><br><span class="line"><span class="hljs-string">TypeError: Input 'value' of 'Assign' Op has type float64 that does not match type float32 of argument 'ref'.</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>维度在程序运行中是有可能改变的，但是需要通过设置参数validate_shape=False。</li>
+</ul>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">w1 = tf.Variable(tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>], stddev=<span class="hljs-number">1</span>), name = <span class="hljs-string">"w1"</span>)</span><br><span class="line">w2 = tf.Variable(tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">2</span>], stddev=<span class="hljs-number">1</span>), name = <span class="hljs-string">"w2"</span>)</span><br><span class="line"><span class="hljs-comment"># 下面这句会报维度不匹配的错误：</span></span><br><span class="line"><span class="hljs-comment"># ValueError: Dimension 1 in both shapes must be equal, but are 3 and 2</span></span><br><span class="line"><span class="hljs-comment"># for 'Assign_1' (op: 'Assign') with input shapes: [2, 3], [2, 2].</span></span><br><span class="line">tf.assign(w1, w2)</span><br><span class="line"><span class="hljs-comment"># 这一句可以被成功执行。</span></span><br><span class="line">tf.assign(w1, w2, validate_shape=<span class="hljs-keyword">False</span>)</span><br></pre></td></tr></table></figure>
         </div>
         
         <div class="level is-size-7 is-uppercase">
