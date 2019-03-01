@@ -2,23 +2,20 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>TensorFlow实战Google深度学习框架 笔记 - Daaliang&#39;s Blog</title>
+<title>TensorFlow实战Google深度学习框架 笔记 第四章 - Daaliang&#39;s Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="第二章 TensorFlow 环境搭建简单示例代码：12345678import tensorflow as tfa = tf.constant([1.0, 2.0], name=&quot;a&quot;)b = tf.constant([2.0, 3.0], name=&quot;b&quot;)result = a + bsess = tf.Session()sess.run(result)---输出---array([3.,">
-<meta name="keywords" content="深度学习,TensorFlow">
+    <meta name="keywords" content="深度学习,TensorFlow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TensorFlow实战Google深度学习框架 笔记">
-<meta property="og:url" content="http://daaliang.fun/2019/02/27/TensorFlow实战Google深度学习框架-笔记/index.html">
+<meta property="og:title" content="TensorFlow实战Google深度学习框架 笔记 第四章">
+<meta property="og:url" content="http://daaliang.fun/2019/03/01/TensorFlow实战Google深度学习框架-笔记-第四章/index.html">
 <meta property="og:site_name" content="Daaliang&#39;s Blog">
-<meta property="og:description" content="第二章 TensorFlow 环境搭建简单示例代码：12345678import tensorflow as tfa = tf.constant([1.0, 2.0], name=&quot;a&quot;)b = tf.constant([2.0, 3.0], name=&quot;b&quot;)result = a + bsess = tf.Session()sess.run(result)---输出---array([3.,">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-28T11:36:24.365Z">
+<meta property="og:updated_time" content="2019-03-01T03:20:50.666Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TensorFlow实战Google深度学习框架 笔记">
-<meta name="twitter:description" content="第二章 TensorFlow 环境搭建简单示例代码：12345678import tensorflow as tfa = tf.constant([1.0, 2.0], name=&quot;a&quot;)b = tf.constant([2.0, 3.0], name=&quot;b&quot;)result = a + bsess = tf.Session()sess.run(result)---输出---array([3.,">
+<meta name="twitter:title" content="TensorFlow实战Google深度学习框架 笔记 第四章">
 
 
 
@@ -94,7 +91,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="TensorFlow实战Google深度学习框架 笔记" height="28">
+                <img src="/images/logo.svg" alt="TensorFlow实战Google深度学习框架 笔记 第四章" height="28">
             
             </a>
         </div>
@@ -143,7 +140,7 @@
     
     <div class="card-image">
         <span class="image is-7by1">
-            <img class="thumbnail" src="/images/0002Tensorflow.jpg" alt="TensorFlow实战Google深度学习框架 笔记">
+            <img class="thumbnail" src="/images/0002Tensorflow.jpg" alt="TensorFlow实战Google深度学习框架 笔记 第四章">
         </span>
     </div>
     
@@ -151,17 +148,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-02-27T11:33:57.000Z">2019-02-27</time>
+                <time class="level-item has-text-grey" datetime="2019-03-01T03:18:45.000Z">2019-03-01</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/读书笔记/">读书笔记</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/读书笔记/深度学习/">深度学习</a>
+                <a class="has-link-grey -link" href="/categories/读书笔记/">读书笔记</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/读书笔记/TensorFlow实战Google深度学习框架/">TensorFlow实战Google深度学习框架</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    16 minutes read (About 2452 words)
+                    a few seconds read (About 20 words)
                 </span>
                 
                 
@@ -175,179 +172,14 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                TensorFlow实战Google深度学习框架 笔记
+                TensorFlow实战Google深度学习框架 笔记 第四章
             
         </h1>
         <div class="content">
             <!--标题忽略
-# TensorFlow实战Google深度学习框架 笔记
+# TensorFlow实战Google深度学习框架 笔记 第四章
 -->
-<h2 id="第二章-TensorFlow-环境搭建"><a href="#第二章-TensorFlow-环境搭建" class="headerlink" title="第二章 TensorFlow 环境搭建"></a>第二章 TensorFlow 环境搭建</h2><p>简单示例代码：<br><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> tensorflow <span class="hljs-keyword">as</span> tf</span><br><span class="line">a = tf.constant([<span class="hljs-number">1.0</span>, <span class="hljs-number">2.0</span>], name=<span class="hljs-string">"a"</span>)</span><br><span class="line">b = tf.constant([<span class="hljs-number">2.0</span>, <span class="hljs-number">3.0</span>], name=<span class="hljs-string">"b"</span>)</span><br><span class="line">result = a + b</span><br><span class="line">sess = tf.Session()</span><br><span class="line">sess.run(result)</span><br><span class="line">---输出---</span><br><span class="line">array([<span class="hljs-number">3.</span>, <span class="hljs-number">5.</span>], dtype=float32)</span><br></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<h2 id="第三章-TensorFlow-入门"><a href="#第三章-TensorFlow-入门" class="headerlink" title="第三章 TensorFlow 入门"></a>第三章 TensorFlow 入门</h2><h3 id="3-1-计算图"><a href="#3-1-计算图" class="headerlink" title="3.1 计算图"></a>3.1 计算图</h3><ul>
-<li>系统默认维护一个计算图,通过<code>tf.get_default_graph</code>获取当前默认计算图。</li>
-<li>通过<code>a.graph</code>查看张量<code>a</code>所属计算图。示例：</li>
-</ul>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(a.graph <span class="hljs-keyword">is</span> tf.get_default_graph())</span><br><span class="line">---输出---</span><br><span class="line"><span class="hljs-keyword">True</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>在不同计算图上定义和使用变量</li>
-</ul>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> tensorflow <span class="hljs-keyword">as</span> tf</span><br><span class="line"></span><br><span class="line">g1 = tf.Graph()</span><br><span class="line"><span class="hljs-keyword">with</span> g1.as_default():</span><br><span class="line">    <span class="hljs-comment">#g1中定义"v", 设置为0。</span></span><br><span class="line">    v = tf.get_variable(</span><br><span class="line">        <span class="hljs-string">"v"</span>, initializer = tf.zeros_initializer(shape = [<span class="hljs-number">1</span>])</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">g2 = tf.Graph()</span><br><span class="line"><span class="hljs-keyword">with</span> g2.as_default():</span><br><span class="line">    <span class="hljs-comment">#g2中定义"v", 设置为1。</span></span><br><span class="line">    v = tf.get_variable(</span><br><span class="line">        <span class="hljs-string">"v"</span>, initializer = tf.ones_initializer(shape = [<span class="hljs-number">1</span>])</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">with</span> tf.Session(graph=g1) <span class="hljs-keyword">as</span> sess:</span><br><span class="line">    tf.global_variables_initializer().run()</span><br><span class="line">    <span class="hljs-keyword">with</span> tf.variable_scope(<span class="hljs-string">""</span>, reuse=<span class="hljs-keyword">True</span>):</span><br><span class="line">        print(sess.run(tf.get_variable(<span class="hljs-string">"v"</span>)))</span><br><span class="line">        <span class="hljs-comment">#g1中"v"输出0。</span></span><br><span class="line">    </span><br><span class="line"><span class="hljs-keyword">with</span> tf.Session(graph=g2) <span class="hljs-keyword">as</span> sess:</span><br><span class="line">    tf.global_variables_initializer().run()</span><br><span class="line">    <span class="hljs-keyword">with</span> tf.variable_scope(<span class="hljs-string">""</span>, reuse=<span class="hljs-keyword">True</span>):</span><br><span class="line">        print(sess.run(tf.get_variable(<span class="hljs-string">"v"</span>)))</span><br><span class="line">        <span class="hljs-comment">#g2中"v"输出1。</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>对计算图指定计算设备</li>
-</ul>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">g = tf.Graph()</span><br><span class="line"><span class="hljs-comment"># 指定计算运行的设备。</span></span><br><span class="line"><span class="hljs-keyword">with</span> g.device(<span class="hljs-string">'/gpu:0'</span>):</span><br><span class="line">    result = a + b</span><br></pre></td></tr></table></figure>
-<ul>
-<li>在一个计算图中，可以通过集合(collection)管理不同类别的资源。通过<code>tf.add_to_collection</code>函数可以将资源加入一个或多个集合中，然后通过<code>tf.get_collection</code>获取一个集合里面的所有资源。这里的资源可以是张量、变量或者运行TensorFlow 程序所需要的队列资源,等等。TensorFlow 也自动管理了一些最常用的集合:</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">集合名称</th>
-<th style="text-align:left">集合内容</th>
-<th style="text-align:left">使用场景</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">tf.GraphKeys.VARIABLES</td>
-<td style="text-align:left">所有变量</td>
-<td style="text-align:left">持久化 TensorFlow 模型</td>
-</tr>
-<tr>
-<td style="text-align:left">tf.GraphKeys.TRAINABLE_VARIABLES</td>
-<td style="text-align:left">可学习的变量（一般指神经网络中的参数）</td>
-<td style="text-align:left">模型训练、生成模型可视化内容</td>
-</tr>
-<tr>
-<td style="text-align:left">tf.GraphKeys.SUMMARIES</td>
-<td style="text-align:left">日志生成相关的张量</td>
-<td style="text-align:left">TensorFlow 计算可视化</td>
-</tr>
-<tr>
-<td style="text-align:left">tf.GraphKeys.QUEUE_RUNNERS</td>
-<td style="text-align:left">处理输入的QueueRunner</td>
-<td style="text-align:left">输入处理</td>
-</tr>
-<tr>
-<td style="text-align:left">tf.GraphKeys.MOVING_AVERAGE_VARIABLES</td>
-<td style="text-align:left">所有计算了滑动平均值的变量</td>
-<td style="text-align:left">计算变量的滑动平均值</td>
-</tr>
-</tbody>
-</table>
-<h3 id="3-2-张量"><a href="#3-2-张量" class="headerlink" title="3.2 张量"></a>3.2 张量</h3><p>张量可以理解为多维数组，一阶张量为标量(scalar)，二阶张量为向量(vector)，n阶张量可以理解为n维数组。张量不保存数值，保存的是计算数值的过程。<br><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> tensorflow <span class="hljs-keyword">as</span> tf</span><br><span class="line"></span><br><span class="line">a = tf.constant([<span class="hljs-number">1.0</span>, <span class="hljs-number">2.0</span>], name=<span class="hljs-string">"a"</span>)</span><br><span class="line">b = tf.constant([<span class="hljs-number">2.0</span>, <span class="hljs-number">3.0</span>], name=<span class="hljs-string">"b"</span>)</span><br><span class="line">result = tf.add(a, b, name=<span class="hljs-string">"add"</span>)</span><br><span class="line"><span class="hljs-keyword">print</span> result</span><br><span class="line">---输出--</span><br><span class="line">Tensor(<span class="hljs-string">"add:0"</span>, shape=(<span class="hljs-number">2</span>,), dtype=float32)</span><br></pre></td></tr></table></figure></p>
-<p>张量保存了三个属性：名字(name), 维度(shape), 类型(type)。</p>
-<ul>
-<li>名字：张量的命名可以通过“node:src_output”的形式来给出。其中 node 为节点的名称，src_output表示当前张量来自节点的第几个输出。<br>上面”add:0”说明result是计算节点”add”输出的第一个结果。</li>
-<li>维度：描述张量的维度信息。shape=(2，）说明了result是一个一维数组，这个数组的长度为2。</li>
-<li>类型：计算类型需匹配否则报错。例，若将以上代码的a小数点去掉，成为<code>a = tf.constant([1 , 2], name=&quot;a&quot;)</code>则运行报错：<br><code>ValueError: Tensor conversion requested dtype int32 for Tensor with dtype float32：&#39;Tensor(&quot;b:0&quot;, shape=(2,), dtype=float32)&#39;</code><br>可以指定a的类型则不会出问题：<br><code>a = tf.constant([1,2], name=&quot;a&quot;, dtype=tf.float32)</code></li>
-</ul>
-<p>TensorFlow支持的14种不同类型：<br>实数(tf.float32, tf.float64), 整数(tf.int8, tf.int16, tf.int32, tf.int64, tf.unit8), 布尔型(tf.bool)和复数(tf.complex64, tf.complex128)。<br>通过result.get_shape函数可以获取结果张量的维度信息。<br>张量没有存储计算结果，但是可以通过会话获得，例如通过tf.Session().run(result)获得result结果。</p>
-<h3 id="3-3-会话-TensorFlow运行模型"><a href="#3-3-会话-TensorFlow运行模型" class="headerlink" title="3.3 会话(TensorFlow运行模型)"></a>3.3 会话(TensorFlow运行模型)</h3><p>使用会话的方式：</p>
-<ol>
-<li>手动释放：</li>
-</ol>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">＃创建一个会话。</span><br><span class="line">sess = tf.Session()</span><br><span class="line">＃使用这个创建好的会话来得到关心的运算的结果。比如可以调用sess.run(result),</span><br><span class="line">＃来得到 <span class="hljs-number">3.1</span> 节样例中张量 result 的取值。</span><br><span class="line">sess.run(...)</span><br><span class="line">＃关闭会话使得本次运行巾使用到的资源可以被释放。</span><br><span class="line">sess.close()</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>自动释放:</li>
-</ol>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">＃创建一个会话，并通过 Python 中的上下文管理器来管理这个会话。</span><br><span class="line"><span class="hljs-keyword">with</span> tf.Session() <span class="hljs-keyword">as</span> sess:</span><br><span class="line">＃使用创建好的会话来计算关心的结果。</span><br><span class="line">sess.run (...)</span><br><span class="line">＃不需要再调用<span class="hljs-string">"Session.close()"</span>函数来关闭会话，</span><br><span class="line">＃当上下文退出时会话关闭和资源释放也自动完成了。</span><br></pre></td></tr></table></figure>
-<p>TensorFlow 不会自动生成默认的会话，而是需要手动指定。当默认的会话被指定之后可以通过tf.Tensor.eval 函数来计算一个张量的取值 。<br><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sess = tf.Session()</span><br><span class="line"><span class="hljs-keyword">with</span> sess.<span class="hljs-keyword">as</span> default():</span><br><span class="line">print(result. eval())</span><br></pre></td></tr></table></figure></p>
-<p>以下代码功能相同<br><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sess = tf.Session()</span><br><span class="line">＃以下两个命令有相同的功能。</span><br><span class="line">print(sess.run(result))</span><br><span class="line">print(result.eval(session=sess))</span><br></pre></td></tr></table></figure></p>
-<p>使用tf.lnteractiveSession函数会自动将生成的会话注册为默认会话。<br><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sess = tf.InteractiveSession()</span><br><span class="line">prirnt(result. eval())</span><br><span class="line">sess.close()</span><br></pre></td></tr></table></figure></p>
-<p>以上，无论使用哪种方法都可以通过 ConfigProto Protocol BufferCD来配置需要生成的会话，方法：</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">config = tf.ConfigProto(allow soft placement=<span class="hljs-keyword">True</span>, log_device_placement=<span class="hljs-keyword">True</span>)</span><br><span class="line">sessl = tf.InteractiveSession(config=config)</span><br><span class="line">sess2 = tf.Session(config=config)</span><br></pre></td></tr></table></figure>
-<p>ConfigProto常用配置参数:</p>
-<ul>
-<li>allow_soft_placement:<br>这是一个布尔型的参数，默认为False，当它为 True 时，在以下任意一个条件成立时， GPU 上的运算可以放到 CPU 上进行 ：<ol>
-<li>运算无法在 GPU 上执行。</li>
-<li>没有 GPU 资源 (比如运算被指定在第二个 GPU 上运行，但是机器只有一个 GPU)。</li>
-<li>运算输入包含对 CPU 计算结果的引用。</li>
-</ol>
-</li>
-<li>log_device_placement:<br>这也是一个布尔型的参数，当它为 True 时日志中将会记录每个节点被安排在哪个设备上以方便调试。生产环境中设置为 False 可以减少日志量。</li>
-</ul>
-<h3 id="3-4-TensorFlow实现神经网络"><a href="#3-4-TensorFlow实现神经网络" class="headerlink" title="3.4 TensorFlow实现神经网络"></a>3.4 TensorFlow实现神经网络</h3><p>矩阵乘法：<br><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = tf.matmul(x, w1)</span><br><span class="line">y = tf.matmul(a, w2)</span><br></pre></td></tr></table></figure></p>
-<h4 id="变量初始化"><a href="#变量初始化" class="headerlink" title="变量初始化"></a>变量初始化</h4><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#产生一个 2×3 的矩阵，矩阵中的元素是均值为 0，标准差为 2 的随机数。可以通过参数 mean 来指定平均值，默认为0。</span></span><br><span class="line">weights = tf.Variable(tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>]), stddev=<span class="hljs-number">2</span>))</span><br></pre></td></tr></table></figure>
-<p><strong>TensorFlow 随机数生成函数表</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">函数名称</th>
-<th style="text-align:left">随机数分布</th>
-<th style="text-align:left">主要参数</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">tf.random_normal</td>
-<td style="text-align:left">正态分布</td>
-<td style="text-align:left">平均值、标准差、取值类型</td>
-</tr>
-<tr>
-<td style="text-align:left">tf.truncated_normal</td>
-<td style="text-align:left">正态分布，但如果随机出来的值偏离平均值超过2个标准差就重新随机</td>
-<td style="text-align:left">平均值、标准差、取值类型</td>
-</tr>
-<tr>
-<td style="text-align:left">tf.random_uniform</td>
-<td style="text-align:left">均匀分布</td>
-<td style="text-align:left">最小、最大取值，取值类型</td>
-</tr>
-<tr>
-<td style="text-align:left">tf.random_gamma</td>
-<td style="text-align:left">Gamma分布</td>
-<td style="text-align:left">形状参数alpha、尺度参数 beta、取值类型</td>
-</tr>
-</tbody>
-</table>
-<p><strong>TensorFlow常数生成函数表</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">函数名称</th>
-<th style="text-align:left">功能</th>
-<th style="text-align:left">样例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">tf.zeros</td>
-<td style="text-align:left">产生全 0 的数组</td>
-<td style="text-align:left">tf.zeros([2, 3], int32) -&gt; [[0, 0, 0], [0, 0, 0]]</td>
-</tr>
-<tr>
-<td style="text-align:left">tf.ones</td>
-<td style="text-align:left">产生全 1 的数组</td>
-<td style="text-align:left">tf.ones([2, 3], int32) -&gt; [[1, 1, 1], [1, 1, 1]]</td>
-</tr>
-<tr>
-<td style="text-align:left">tf.fill</td>
-<td style="text-align:left">产生一个全部为给定数字的数组</td>
-<td style="text-align:left">tf.fill([2, 3], 9) -&gt; [[9, 9, 9], [9, 9, 9]]</td>
-</tr>
-<tr>
-<td style="text-align:left">tf.constant</td>
-<td style="text-align:left">产生一个给定值的常量</td>
-<td style="text-align:left">tf.constant([1, 2, 3]) -&gt; [1, 2, 3]</td>
-</tr>
-</tbody>
-</table>
-<p>一些以常数初始化数值的方法：<br><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">biases = tf.Variable(tf.zeros([<span class="hljs-number">3</span>]))</span><br><span class="line"><span class="hljs-comment"># 生成一个初始值全部为 0 且长度为 3 的变量</span></span><br><span class="line">w2 = tf.Variable(weights.initialized_value())</span><br><span class="line"><span class="hljs-comment"># w2 的初始值被设置成了与 weights 变量相同</span></span><br><span class="line">w3 = tf.Variable(weights.initialized_value() * <span class="hljs-number">2.0</span>)</span><br><span class="line"><span class="hljs-comment"># w3 的初始值则是 weights 初始值的两倍</span></span><br></pre></td></tr></table></figure></p>
-<p>一个前向传播过程：</p>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> tensorflow <span class="hljs-keyword">as</span> tf</span><br><span class="line">＃声明 w1、w2 两个变盘。这里还通过 seed 参数设定了随机种子，</span><br><span class="line">＃这样可以保证每次运行得到的结果是一样的。</span><br><span class="line">w1 = tf.Variable(tf.random_normal((<span class="hljs-number">2</span>, <span class="hljs-number">3</span>), stddev=<span class="hljs-number">1</span>, seed=<span class="hljs-number">1</span>))</span><br><span class="line">w2 = tf.Variable(tf.random_normal((<span class="hljs-number">3</span>, <span class="hljs-number">1</span>), stddev=<span class="hljs-number">1</span>, seed=<span class="hljs-number">1</span>))</span><br><span class="line">＃暂时将输入的特征向量定义为一个常量。注意这里 x 是一个 <span class="hljs-number">1</span>×<span class="hljs-number">2</span> 的矩阵。</span><br><span class="line">x = tf.constant([[<span class="hljs-number">0.7</span>, <span class="hljs-number">0.9</span>]])</span><br><span class="line">＃通过 <span class="hljs-number">3.4</span><span class="hljs-number">.2</span> 节描述的前向传播算法获得神经网络的输出。</span><br><span class="line">a = tf.matmul(x, w1)</span><br><span class="line">y = tf.matmul(a, w2)</span><br><span class="line">sess = tf.Session()</span><br><span class="line">＃与 <span class="hljs-number">3.4</span><span class="hljs-number">.2</span> 中的计算不同，这里不能直接通过 sess.run(y) 来获取 y 的取值，</span><br><span class="line">＃因为 w1 和 w2 都还没有运行初始化过程。以下两行分别初始化了 w1 和 w2 两个变量。</span><br><span class="line">sess.run(w1.initializer) ＃初始化 w1。</span><br><span class="line">sess.run(w2.initializer) ＃初始化 w2。</span><br><span class="line">＃输出[[<span class="hljs-number">3.95757794</span>]]。</span><br><span class="line">print(sess.run(y))</span><br><span class="line">sess.close()</span><br></pre></td></tr></table></figure>
-<p>当需要初始化的变量变多，可以使用以下方法初始化：<br><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">init_op = tf.global_variables_initializer()</span><br><span class="line">sess.run(init_op)</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>通过 tf.global_variables() 函数可以拿到当前计算图上所有的变量。</li>
-<li>可以通过变量声明函数中的 trainable 参数来区分需要优化的参数（比如神经网络中的参数）和其他参数（比如选代的轮数）。如果声明变量时参数 trainable 为 True，那么这个变量将会被加入到GraphKeys.TRAINABLE_VARIABLES 集合。</li>
-<li>类似张量，维度（shape)和类型 (type) 也是变量最重要的两个属性，一个变量在构建之后，它的类型就不能再改变了。</li>
-</ul>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">w1 = tf.Variable(tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>], stddev=<span class="hljs-number">1</span>), name=<span class="hljs-string">"w1"</span>)</span><br><span class="line">w2 = tf.Variable(tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>], dtype=tf.float64, stddev=<span class="hljs-number">1</span>),</span><br><span class="line">name=<span class="hljs-string">"w2"</span>)</span><br><span class="line">w1.assign(w2)</span><br><span class="line"><span class="hljs-string">'''</span></span><br><span class="line"><span class="hljs-string">程序将报错：</span></span><br><span class="line"><span class="hljs-string">TypeError: Input 'value' of 'Assign' Op has type float64 that does not match type float32 of argument 'ref'.</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>维度在程序运行中是有可能改变的，但是需要通过设置参数validate_shape=False。</li>
-</ul>
-<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">w1 = tf.Variable(tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>], stddev=<span class="hljs-number">1</span>), name = <span class="hljs-string">"w1"</span>)</span><br><span class="line">w2 = tf.Variable(tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">2</span>], stddev=<span class="hljs-number">1</span>), name = <span class="hljs-string">"w2"</span>)</span><br><span class="line"><span class="hljs-comment"># 下面这句会报维度不匹配的错误：</span></span><br><span class="line"><span class="hljs-comment"># ValueError: Dimension 1 in both shapes must be equal, but are 3 and 2</span></span><br><span class="line"><span class="hljs-comment"># for 'Assign_1' (op: 'Assign') with input shapes: [2, 3], [2, 2].</span></span><br><span class="line">tf.assign(w1, w2)</span><br><span class="line"><span class="hljs-comment"># 这一句可以被成功执行。</span></span><br><span class="line">tf.assign(w1, w2, validate_shape=<span class="hljs-keyword">False</span>)</span><br></pre></td></tr></table></figure>
         </div>
         
         <div class="level is-size-7 is-uppercase">
@@ -373,8 +205,8 @@
         
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/02/26/100个句子记完7000个托福单词-句子部分-英文/">
-                <span class="level-item">100个句子记完7000个托福单词 句子部分(英文)</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/02/27/TensorFlow实战Google深度学习框架-笔记-第二、三章/">
+                <span class="level-item">TensorFlow实战Google深度学习框架 笔记 第二、三章</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -450,7 +282,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        4
+                        5
                     </p>
                 </div>
             </div>
@@ -565,7 +397,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/TensorFlow/" style="font-size: 10px;">TensorFlow</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/深度学习/" style="font-size: 10px;">深度学习</a> <a href="/tags/英语/" style="font-size: 20px;">英语</a> <a href="/tags/语言/" style="font-size: 20px;">语言</a>
+        <a href="/tags/TensorFlow/" style="font-size: 20px;">TensorFlow</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/深度学习/" style="font-size: 20px;">深度学习</a> <a href="/tags/英语/" style="font-size: 20px;">英语</a> <a href="/tags/语言/" style="font-size: 20px;">语言</a>
     </div>
 </div>
 
@@ -619,15 +451,15 @@
                 <span class="level-item">读书笔记</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a><ul><li>
-        <a class="level is-marginless" href="/categories/读书笔记/深度学习/">
+        <a class="level is-marginless" href="/categories/读书笔记/TensorFlow实战Google深度学习框架/">
             <span class="level-start">
-                <span class="level-item">深度学习</span>
+                <span class="level-item">TensorFlow实战Google深度学习框架</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a></li></ul></li>
             </ul>
@@ -644,18 +476,37 @@
         
         <article class="media">
             
-            <a href="/2019/02/27/TensorFlow实战Google深度学习框架-笔记/" class="media-left">
+            <a href="/2019/03/01/TensorFlow实战Google深度学习框架-笔记-第四章/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/0002Tensorflow.jpg" alt="TensorFlow实战Google深度学习框架 笔记">
+                    <img class="thumbnail" src="/images/0002Tensorflow.jpg" alt="TensorFlow实战Google深度学习框架 笔记 第四章">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-03-01T03:18:45.000Z">2019-03-01</time></div>
+                    <a href="/2019/03/01/TensorFlow实战Google深度学习框架-笔记-第四章/" class="has-link-black-ter is-size-6">TensorFlow实战Google深度学习框架 笔记 第四章</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/读书笔记/">读书笔记</a> / <a class="has-link-grey -link" href="/categories/读书笔记/TensorFlow实战Google深度学习框架/">TensorFlow实战Google深度学习框架</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/02/27/TensorFlow实战Google深度学习框架-笔记-第二、三章/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/0002Tensorflow.jpg" alt="TensorFlow实战Google深度学习框架 笔记 第二、三章">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-02-27T11:33:57.000Z">2019-02-27</time></div>
-                    <a href="/2019/02/27/TensorFlow实战Google深度学习框架-笔记/" class="has-link-black-ter is-size-6">TensorFlow实战Google深度学习框架 笔记</a>
+                    <a href="/2019/02/27/TensorFlow实战Google深度学习框架-笔记-第二、三章/" class="has-link-black-ter is-size-6">TensorFlow实战Google深度学习框架 笔记 第二、三章</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/读书笔记/">读书笔记</a> / <a class="has-link-grey -link" href="/categories/读书笔记/深度学习/">深度学习</a>
+                        <a class="has-link-grey -link" href="/categories/读书笔记/">读书笔记</a> / <a class="has-link-grey -link" href="/categories/读书笔记/TensorFlow实战Google深度学习框架/">TensorFlow实战Google深度学习框架</a>
                     </p>
                 </div>
             </div>
@@ -731,6 +582,17 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2019/03/">
+                <span class="level-start">
+                    <span class="level-item">March 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2019/02/">
                 <span class="level-start">
                     <span class="level-item">February 2019</span>
@@ -768,7 +630,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/TensorFlow/">
                         <span class="tag">TensorFlow</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -782,7 +644,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/深度学习/">
                         <span class="tag">深度学习</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -862,15 +724,15 @@
                 <span class="level-item">读书笔记</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a><ul><li>
-        <a class="level is-marginless" href="/categories/读书笔记/深度学习/">
+        <a class="level is-marginless" href="/categories/读书笔记/TensorFlow实战Google深度学习框架/">
             <span class="level-start">
-                <span class="level-item">深度学习</span>
+                <span class="level-item">TensorFlow实战Google深度学习框架</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a></li></ul></li>
             </ul>
@@ -887,18 +749,37 @@
         
         <article class="media">
             
-            <a href="/2019/02/27/TensorFlow实战Google深度学习框架-笔记/" class="media-left">
+            <a href="/2019/03/01/TensorFlow实战Google深度学习框架-笔记-第四章/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/0002Tensorflow.jpg" alt="TensorFlow实战Google深度学习框架 笔记">
+                    <img class="thumbnail" src="/images/0002Tensorflow.jpg" alt="TensorFlow实战Google深度学习框架 笔记 第四章">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-03-01T03:18:45.000Z">2019-03-01</time></div>
+                    <a href="/2019/03/01/TensorFlow实战Google深度学习框架-笔记-第四章/" class="has-link-black-ter is-size-6">TensorFlow实战Google深度学习框架 笔记 第四章</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/读书笔记/">读书笔记</a> / <a class="has-link-grey -link" href="/categories/读书笔记/TensorFlow实战Google深度学习框架/">TensorFlow实战Google深度学习框架</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/02/27/TensorFlow实战Google深度学习框架-笔记-第二、三章/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/0002Tensorflow.jpg" alt="TensorFlow实战Google深度学习框架 笔记 第二、三章">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-02-27T11:33:57.000Z">2019-02-27</time></div>
-                    <a href="/2019/02/27/TensorFlow实战Google深度学习框架-笔记/" class="has-link-black-ter is-size-6">TensorFlow实战Google深度学习框架 笔记</a>
+                    <a href="/2019/02/27/TensorFlow实战Google深度学习框架-笔记-第二、三章/" class="has-link-black-ter is-size-6">TensorFlow实战Google深度学习框架 笔记 第二、三章</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/读书笔记/">读书笔记</a> / <a class="has-link-grey -link" href="/categories/读书笔记/深度学习/">深度学习</a>
+                        <a class="has-link-grey -link" href="/categories/读书笔记/">读书笔记</a> / <a class="has-link-grey -link" href="/categories/读书笔记/TensorFlow实战Google深度学习框架/">TensorFlow实战Google深度学习框架</a>
                     </p>
                 </div>
             </div>
@@ -974,6 +855,17 @@
         <ul class="menu-list">
         
         <li>
+            <a class="level is-marginless" href="/archives/2019/03/">
+                <span class="level-start">
+                    <span class="level-item">March 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2019/02/">
                 <span class="level-start">
                     <span class="level-item">February 2019</span>
@@ -1011,7 +903,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/TensorFlow/">
                         <span class="tag">TensorFlow</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -1025,7 +917,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/深度学习/">
                         <span class="tag">深度学习</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -1060,7 +952,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="TensorFlow实战Google深度学习框架 笔记" height="28">
+                    <img src="/images/logo.svg" alt="TensorFlow实战Google深度学习框架 笔记 第四章" height="28">
                 
                 </a>
                 <p class="is-size-7">
